@@ -158,6 +158,8 @@ export function timeLabel(value) {
 }
 
 export function enrichTask(task, benchmark = {}, instructions = '', override = {}) {
+  const gpu = override.gpu || task.gpu || benchmark.gpu;
+  const timeBudget = override.timeBudget || task.timeBudget || benchmark.timeBudget;
   const blocks = blocksFromMarkdown(instructions);
   const prose = blocks.filter(usable).filter(b => !(/(?:Optimization )?Task:?$/i.test(plain(b.text)) && plain(b.text).length < 90));
   const objectiveHeading = /^(?:(?:research|task|core) )?(?:objective|goal|assignment|question|task|task context|published task summary|published experimental setting|task description|functional description)$/i;
@@ -213,8 +215,8 @@ export function enrichTask(task, benchmark = {}, instructions = '', override = {
   if (override.world) world = override.world.map(clean);
   if (!world.length) world = [UNKNOWN];
   if (!override.world) {
-    world.push('Compute: ' + resourceLabel(task.gpu || benchmark.gpu));
-    world.push('Time: ' + timeLabel(task.timeBudget || benchmark.timeBudget));
+    world.push('Compute: ' + resourceLabel(gpu));
+    world.push('Time: ' + timeLabel(timeBudget));
   }
 
   let submission = select(blocks, /^(?:deliverable|deliverables|required result|output|submission|submission file|what to submit|final submission|the entry point|entry point|submission format|your submission|wrapper entry information|deliverable and evaluation)$/i, 8, { code: true }).join('\n\n');
@@ -239,9 +241,9 @@ export function enrichTask(task, benchmark = {}, instructions = '', override = {
     domains,
     field: fieldFor(task, domains, override),
     brief: { task: taskText, world: unique(world), submission, grader: unique(grader) },
-    resourceLabel: resourceLabel(task.gpu || benchmark.gpu),
-    timeLabel: timeLabel(task.timeBudget || benchmark.timeBudget),
+    resourceLabel: resourceLabel(gpu),
+    timeLabel: timeLabel(timeBudget),
   };
-  for (const key of ['name', 'sourceUrl', 'sources']) if (override[key]) result[key] = override[key];
+  for (const key of ['name', 'sourceUrl', 'sources', 'gpu', 'timeBudget']) if (override[key]) result[key] = override[key];
   return result;
 }

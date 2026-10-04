@@ -69,6 +69,18 @@ test('explicit reviewed overrides win without mutating data and retain provenanc
   assert.ok(e.domains.includes('Agents'));
 });
 
+test('reviewed resource overrides update labels, metadata and world consistently', () => {
+  const task = { name:'Policy training', gpu:'Table fragment', timeBudget:'| wall-clock | 9000 s |' };
+  const override = { gpu:'CPU only; 4 cores', timeBudget:'9 hours (32400 s) in instructions; 12-hour runtime timeout; grading stage 9000 s' };
+  const e = enrichTask(task, {}, '', override);
+  assert.equal(e.gpu, override.gpu);
+  assert.equal(e.resourceLabel, override.gpu);
+  assert.equal(e.timeBudget, override.timeBudget);
+  assert.equal(e.timeLabel, override.timeBudget);
+  assert.ok(e.brief.world.includes('Time: ' + override.timeBudget));
+  assert.equal(task.timeBudget, '| wall-clock | 9000 s |');
+});
+
 test('every current record produces a complete schema with controlled domains and unchanged resource facts', () => {
   for (const t of tasks) {
     const e = enrich(t);

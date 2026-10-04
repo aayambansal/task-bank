@@ -509,9 +509,12 @@ summary:focus-visible {
   color: var(--secondary);
   white-space: nowrap;
 }
-.field-tag:hover {
+button.field-tag:hover {
   border-color: var(--fg);
   color: var(--fg);
+}
+.source-field {
+  white-space: normal;
 }
 .benchmark-link {
   font-size: 11px;

@@ -546,6 +546,7 @@
     ]
   },
   "openrsi-index--kev-decision-architecture": {
+    "timeBudget": "12 hours (default agent budget; 12-hour runtime timeout)",
     "name": "Small-model decision architecture",
     "field": "Model architecture · calibrated decisions",
     "task": "Improve a small neural model’s decisions and probability calibration across knowledge and transfer tasks.",
@@ -764,6 +765,7 @@
     ]
   },
   "rsi-exam--trifinger_offline_rl_push_refined": {
+    "timeBudget": "9 hours (32400 s) in instructions; 12-hour runtime timeout; grading stage 9000 s",
     "name": "TriFinger cube pushing",
     "field": "Offline reinforcement learning · robotics",
     "task": "Learn a torque-control policy that pushes a cube to its target using only a fixed offline trajectory dataset.",

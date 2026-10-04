@@ -633,6 +633,11 @@ export default function App() {
                                   {d}
                                 </button>
                               ))}
+                            {!t.domains?.length && (
+                              <span className="field-tag source-field">
+                                {t.field}
+                              </span>
+                            )}
                           </div>
                         </td>
                         <td className="benchmark-col">
