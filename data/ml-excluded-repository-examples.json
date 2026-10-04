@@ -1,0 +1,110 @@
+[
+  {
+    "id": "mlrc-bench--erasing_invisible_watermarks",
+    "name": "Erasing Invisible Watermarks",
+    "sourceUrl": "https://github.com/yunx-z/MLRC-Bench/blob/main/MLAgentBench/benchmarks_base/erasing_invisible_watermarks/scripts/research_problem.txt",
+    "reason": "Repository example/extension"
+  },
+  {
+    "id": "mlagentbench--bibtex-generation",
+    "name": "Bibtex Generation",
+    "sourceUrl": "https://github.com/snap-stanford/MLAgentBench/blob/main/MLAgentBench/benchmarks/bibtex-generation/scripts/research_problem.txt",
+    "reason": "Repository example/extension"
+  },
+  {
+    "id": "mlagentbench--literature-review-tool",
+    "name": "Literature Review Tool",
+    "sourceUrl": "https://github.com/snap-stanford/MLAgentBench/blob/main/MLAgentBench/benchmarks/literature-review-tool/scripts/research_problem.txt",
+    "reason": "Repository example/extension"
+  },
+  {
+    "id": "mle-bench--invasive-species-monitoring",
+    "name": "Invasive Species Monitoring",
+    "sourceUrl": "https://github.com/openai/mle-bench/blob/main/mlebench/competitions/invasive-species-monitoring/description.md",
+    "reason": "Outside split75"
+  },
+  {
+    "id": "mle-bench--ml2021spring-hw2",
+    "name": "ML2021Spring-hw2",
+    "sourceUrl": "https://github.com/openai/mle-bench/blob/main/mlebench/competitions/ml2021spring-hw2/description.md",
+    "reason": "Outside split75"
+  },
+  {
+    "id": "mle-bench--movie-review-sentiment-analysis-kernels-only",
+    "name": "Movie Review Sentiment Analysis (Kernels Only)",
+    "sourceUrl": "https://github.com/openai/mle-bench/blob/main/mlebench/competitions/movie-review-sentiment-analysis-kernels-only/description.md",
+    "reason": "Outside split75"
+  },
+  {
+    "id": "mle-bench--paddy-disease-classification",
+    "name": "Paddy Doctor: Paddy Disease Classification",
+    "sourceUrl": "https://github.com/openai/mle-bench/blob/main/mlebench/competitions/paddy-disease-classification/description.md",
+    "reason": "Outside split75"
+  },
+  {
+    "id": "mle-bench--plant-seedlings-classification",
+    "name": "Plant Seedlings Classification",
+    "sourceUrl": "https://github.com/openai/mle-bench/blob/main/mlebench/competitions/plant-seedlings-classification/description.md",
+    "reason": "Outside split75"
+  },
+  {
+    "id": "mle-bench--playground-series-s3e18",
+    "name": "Explore Multi-Label Classification with an Enzyme Substrate Dataset",
+    "sourceUrl": "https://github.com/openai/mle-bench/blob/main/mlebench/competitions/playground-series-s3e18/description.md",
+    "reason": "Outside split75"
+  },
+  {
+    "id": "mle-bench--spaceship-titanic",
+    "name": "Spaceship Titanic",
+    "sourceUrl": "https://github.com/openai/mle-bench/blob/main/mlebench/competitions/spaceship-titanic/description.md",
+    "reason": "Outside split75"
+  },
+  {
+    "id": "mle-dojo--ml2021spring-hw2",
+    "name": "Ml2021Spring Hw2",
+    "sourceUrl": "https://github.com/MLE-Dojo/MLE-Dojo/blob/main/mledojo/competitions/ml2021spring-hw2/info/description.txt",
+    "reason": "Absent from the 200-task preparation manifests"
+  },
+  {
+    "id": "mle-dojo--paddy-disease-classification",
+    "name": "Paddy Disease Classification",
+    "sourceUrl": "https://github.com/MLE-Dojo/MLE-Dojo/blob/main/mledojo/competitions/paddy-disease-classification/info/description.txt",
+    "reason": "Absent from the 200-task preparation manifests"
+  },
+  {
+    "id": "mlgym--imageclassificationcifar10l1",
+    "name": "Image Classification CIFAR10",
+    "sourceUrl": "https://github.com/facebookresearch/MLGym/blob/main/configs/tasks/imageClassificationCifar10L1.yaml",
+    "reason": "Extra configuration variant"
+  },
+  {
+    "id": "mlgym--regressionhouseprice",
+    "name": "Housing Price Prediction",
+    "sourceUrl": "https://github.com/facebookresearch/MLGym/blob/main/configs/tasks/regressionHousePrice.yaml",
+    "reason": "Extra configuration variant"
+  },
+  {
+    "id": "mlgym--regressionhousingprice",
+    "name": "Housing Price Prediction",
+    "sourceUrl": "https://github.com/facebookresearch/MLGym/blob/main/configs/tasks/regressionHousingPrice.yaml",
+    "reason": "Extra configuration variant"
+  },
+  {
+    "id": "mlgym--regressionkagglehousepricel1",
+    "name": "Kaggle Housing Price Prediction",
+    "sourceUrl": "https://github.com/facebookresearch/MLGym/blob/main/configs/tasks/regressionKaggleHousePriceL1.yaml",
+    "reason": "Extra configuration variant"
+  },
+  {
+    "id": "mlgym--rlmountaincarcontinuousreinforce",
+    "name": "Mountain Car Continuous Gymnax",
+    "sourceUrl": "https://github.com/facebookresearch/MLGym/blob/main/configs/tasks/rlMountainCarContinuousReinforce.yaml",
+    "reason": "Extra configuration variant"
+  },
+  {
+    "id": "mlgym--titanic",
+    "name": "Titanic Survival Prediction",
+    "sourceUrl": "https://github.com/facebookresearch/MLGym/blob/main/configs/tasks/titanic.yaml",
+    "reason": "Extra configuration variant"
+  }
+]

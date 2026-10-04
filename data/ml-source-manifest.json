@@ -1,0 +1,61 @@
+{
+  "reviewedAt": "2026-10-04",
+  "sourceTrees": [
+    {
+      "sourceTree": "MLAgentBench",
+      "commit": "5d71205cc20a8e95d43aa7cb7120e89ca3323e31",
+      "treeTruncated": false
+    },
+    {
+      "sourceTree": "mle-bench",
+      "commit": "507f92e1138bb6e40dac5c6ee7a6758e6424bf97",
+      "treeTruncated": false
+    },
+    {
+      "sourceTree": "InnovatorBench",
+      "commit": "934ead34675a0fc610618094dabeaf7bdcb44818",
+      "treeTruncated": false
+    },
+    {
+      "sourceTree": "ResearchGym",
+      "commit": "0adc08e93754b606d8a76055ed2f1c9574504312",
+      "treeTruncated": false
+    },
+    {
+      "sourceTree": "RE-Bench",
+      "commit": "93b98062e55f6945d4a7e213a3226dd419896170",
+      "treeTruncated": false
+    },
+    {
+      "sourceTree": "PostTrainBench",
+      "commit": "ea8d65bc375e61c8ac77a7aea86effcc995378fb",
+      "treeTruncated": false
+    },
+    {
+      "sourceTree": "mlrbench",
+      "commit": "f728d571a992d71c8b526eeb4d9ab6bb5c8cc824",
+      "treeTruncated": false
+    },
+    {
+      "sourceTree": "FML-bench",
+      "commit": "d336651ebea50c622c256f02ded82b68b4451fdc",
+      "treeTruncated": false
+    },
+    {
+      "sourceTree": "MLRC-Bench",
+      "commit": "0d26417034811d2d4587646c4520cc305ea09dd6",
+      "treeTruncated": false
+    },
+    {
+      "sourceTree": "MLE-Dojo",
+      "commit": "667a8fd0e959eb47f140ce7e621f831fdb55e5dd",
+      "treeTruncated": false
+    },
+    {
+      "sourceTree": "MLGym",
+      "commit": "9d40c1b5035202018cd7091fb4e83a9c68b377c0",
+      "treeTruncated": false
+    }
+  ],
+  "notes": "Canonical task counts are reconciled with published task splits. Small public source text was fetched; no model weights or data archives."
+}
